@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌐 Language Translator</h1>
+        <p class="subtitle">Translate text easily between different languages</p>
+
+        <div class="translator-box">
+
+            <!-- Source Language -->
+            <div class="language-section">
+                <label>From</label>
+
+                <select id="sourceLanguage">
+                    <option value="en">English</option>
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="zh-CN">Chinese</option>
+                    <option value="ko">Korean</option>
+                </select>
+            </div>
+
+            <!-- Text Input -->
+            <textarea
+                id="inputText"
+                placeholder="Enter text to translate..."
+            ></textarea>
+
+
+            <!-- Target Language -->
+            <div class="language-section">
+                <label>To</label>
+
+                <select id="targetLanguage">
+                    <option value="te">Telugu</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="zh-CN">Chinese</option>
+                    <option value="ko">Korean</option>
+                </select>
+            </div>
+
+
+            <button id="translateButton">
+                Translate
+            </button>
+
+
+            <!-- Result -->
+            <div class="result-box">
+
+                <h3>Translation</h3>
+
+                <p id="result">
+                    Your translation will appear here...
+                </p>
+
+                <div class="result-buttons">
+
+                    <button id="copyButton">
+                        📋 Copy
+                    </button>
+
+                    <button id="speakButton">
+                        🔊 Speak
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
